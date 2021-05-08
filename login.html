@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Admin dashboard</title>
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body class="text-center">
+    <link href="{{url_for('static', filename='css/signin.css')}}" rel="stylesheet">
+
+    <!-- action="/dashboard" -->
+  <form class="form-signin" action="/dashboard"  method="post">
+    {% set fname='img/'+ params['login_image']%}
+    <img class="mb-4" src="{{url_for('static', filename=fname)}}" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Admin login</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" placeholder="User Name" name="uname" id="uname" >
+      <label for="uname"></label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control"  placeholder="Password" name="pass" id="pass">
+      <label for="pass"></label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <a href="dashboard.html"><button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button></a>
+    <p class="mt-5 mb-3 text-muted">&copy;Coding is Fun 2017–2021</p>
+  </form>
+  </body>
+</html>
