@@ -1,8 +1,7 @@
-
 # Coding Fun Blog
 
 - It is a blog developed using flask
-- Frontened webpages are taken from Bootstrap.
+- Frontend webpages are taken from Bootstrap.
 
 # What can we do using this blog?
 - Articles can be posted on Blog
@@ -12,7 +11,6 @@
 - Login Form for authentication.
 - Modification is possible ahead
 
-
 # Requirements
 - Python 3
 - Flask
@@ -20,6 +18,3 @@
 - HTML 
 - CSS
 - Mysql Database and Xampp
-
-
-
